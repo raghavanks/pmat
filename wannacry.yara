@@ -4,7 +4,6 @@ rule PMATDetectWannaCry {
         last_updated = "2024-09-08"
         author = "Raghavan"
         description = "A Yara rule for WannaCry based on strings found during static analysis."
-
     strings:
         // Fill out identifying strings and other criteria
         $s1 = "iphlpapi.dll" ascii               // match this ascii string
